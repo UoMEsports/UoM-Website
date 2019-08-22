@@ -1,0 +1,31 @@
+.fas {
+	font-family: "Font Awesome 5 Pro";
+}
+
+body {
+	
+}
+
+.uom-font {
+	font-family: vox, sans-serif !important;
+	font-style: normal;
+}
+
+$light: #a781c3;
+$dark: #6A2C91;
+$success: #39F06A;
+
+$background: white;
+
+a {
+	color: $light;
+
+	transition: color .2s;
+
+	&:visited {
+		color: $light;
+	}
+	&:hover {
+		color: $dark;
+	}
+}

@@ -19,7 +19,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/socials',
+      path: '/events',
       name: 'Events',
       component: Events
     },
