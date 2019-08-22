@@ -17,5 +17,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 100;
 
+  background-color: white;
+  border-bottom: 2px solid $dark;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    &.router-link-exact-active {
+      color: $dark;
+      text-decoration: underline;
+    }
+  }
+
+  .nav-link {
+    margin-right: 30px;
+    font-size: 40px;
+  }
+}
 </style>

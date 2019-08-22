@@ -4,7 +4,9 @@
     <Header/>
     <div class="content">
       <Heading>{{this.$route.name}}</Heading>
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </div>
   </div>
 </template>
@@ -71,6 +73,8 @@ html {
 }
 
 #app {
+  margin-top: 113px;
+
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -80,27 +84,16 @@ html {
   font-family: serenity, sans-serif;
   font-style: normal;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    &.router-link-exact-active {
-      color: $dark;
-      text-decoration: underline;
-    }
-  }
-
-  .nav-link {
-    margin-right: 20px;
-    font-size: 40px;
-  }
-}
 .content {
   max-width: 1200px;
   width: 80%;
   margin: auto;
   position: relative;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
