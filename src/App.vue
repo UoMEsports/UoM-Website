@@ -37,6 +37,15 @@ export default {
       indicator: true,
       defer: false
     });
+  },
+  mounted () {
+    window.setTimeout(() => {
+      this.discord.notify({
+        content: 'Need help? Join our discord!',
+        timeout: 10000,
+        avatar: require('@/assets/logo.png')
+      });
+    }, 4000);
   }
 };
 </script>
