@@ -28,7 +28,7 @@ module.exports = {
     'indent': ['error', 2],
     'no-use-before-define': ['error', { 'functions': false }]
   },
-  "globals": {
-    "Crate": "readonly"
+  'globals': {
+    'Crate': 'readonly'
   }
 };
