@@ -1,0 +1,8 @@
+before_script:
+  - docker info
+
+build_image:
+  script:
+    - docker build -t registry.shieldsuk.me/uomesports/uom-static .
+    #- docker run my-docker-image /script/to/run/tests
+    - docker push registry.shieldsuk.me/uomesports/uom-static
