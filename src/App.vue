@@ -31,7 +31,7 @@ export default {
     this.discord = new Crate({
       server: '230727209202089984',
       channel: '479574193273438208',
-      shard: 'http://admin.uomesports.co.uk:7000',
+      shard: 'https://admin.uomesports.co.uk',
       color: '#6A2C91',
       notifications: true,
       indicator: true,
