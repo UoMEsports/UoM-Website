@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { EventBus } from '../event-bus.js';
+import { EventBus } from './event-bus.js';
 
 export default {
   data () {
@@ -92,7 +92,7 @@ export default {
 .toggle-button {
   position: fixed;
   bottom: 20px;
-  right: 15%;
+  right: 20px;
   z-index: 2147483000;
   cursor: pointer;
   outline: currentcolor none medium;
@@ -195,7 +195,7 @@ export default {
   }
 
   bottom: 20px;
-  right: 15%;
+  right: 20px;
   z-index: 2147482999;
   transition: opacity 0.4s ease 0s, transform 0.3s cubic-bezier(0.24, 0.6, 0.35, 0.96) 0s;
   height: calc(100% - 40px);
@@ -297,7 +297,7 @@ export default {
   padding: 7px 0px 20px;
   width: 300px;
   max-height: calc(70% - 100px);
-  right: 15%;
+  right: 20px;
   bottom: 76px;
 
   .notification-trans-enter-active, .notification-trans-leave-active {
