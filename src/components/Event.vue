@@ -18,10 +18,9 @@ export default {
 .event {
   padding-bottom: 20px;
 }
-.image {
-  img {
-    width: 763px;
-  }
+.image img {
+  width: 763px;
+  max-width: 100%;
 }
 .info {
   font-size: 24px;
