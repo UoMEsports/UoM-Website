@@ -19,7 +19,7 @@
         </div>
       </transition>
     </div>
-    
+
     <button @click="toggle()" class="toggle-button" :class="{show: !open}">
       <div class="icons">
         <svg viewBox="0 0 49 50" class="close" :class="{hidden: !open}">
@@ -82,6 +82,8 @@ export default {
 .root {
   transition: opacity 0.2s ease 0s;
   opacity: 1;
+  height: 100%;
+  width: 100%;
 
   * {
       box-sizing: border-box;
@@ -90,7 +92,7 @@ export default {
 .toggle-button {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 15%;
   z-index: 2147483000;
   cursor: pointer;
   outline: currentcolor none medium;
@@ -101,6 +103,12 @@ export default {
   transition: box-shadow 0.2s ease 0s, background-color 0.3s ease 0s, opacity 0.2s ease 0s, transform 0.2s ease 0s;
   animation: 0.3s ease 0s 1 normal none running button-trans;
   background-color: transparent;
+
+  @media only screen and (max-width: 500px) {
+    border-bottom-right-radius: 50%;
+    right: 2px;
+    bottom: 2px;
+  }
 
   &.show {
     box-shadow: rgba(106, 44, 145, 0.3) 0px 3px 5px -1px, rgba(106, 44, 145, 0.14) 0px 6px 10px 0px, rgba(106, 44, 145, 0.12) 0px 1px 18px 0px;
@@ -173,12 +181,21 @@ export default {
 }
 
 .popup {
-  width: 400px;
-  max-height: 550px;
-
   position: fixed;
+
+  @media only screen and (min-width: 501px) {
+    width: 400px;
+    max-height: 550px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+  }
+
   bottom: 20px;
-  right: 20px;
+  right: 15%;
   z-index: 2147482999;
   transition: opacity 0.4s ease 0s, transform 0.3s cubic-bezier(0.24, 0.6, 0.35, 0.96) 0s;
   height: calc(100% - 40px);
@@ -215,9 +232,16 @@ export default {
     }
 
     .discord-banner {
-      width: 40%;
       margin-top: 10px;
       margin-bottom: 20px;
+
+      @media only screen and (min-width: 501px) {
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        width: 65%;
+      }
     }
 
     .logo {
@@ -273,7 +297,7 @@ export default {
   padding: 7px 0px 20px;
   width: 300px;
   max-height: calc(70% - 100px);
-  right: 20px;
+  right: 15%;
   bottom: 76px;
 
   .notification-trans-enter-active, .notification-trans-leave-active {
