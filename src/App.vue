@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <Navbar/>
-    <Header/>
+    <Header class="header"/>
     <div class="content">
       <Heading>{{this.$route.name}}</Heading>
       <transition name="fade">
         <router-view/>
       </transition>
     </div>
-    <DiscordPopup/>
   </div>
 </template>
 
@@ -16,14 +15,12 @@
 import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 import Heading from '@/components/Heading';
-import DiscordPopup from '@/components/DiscordPopup';
 
 export default {
   components: {
     Navbar,
     Header,
-    Heading,
-    DiscordPopup
+    Heading
   }
 };
 </script>
@@ -59,17 +56,8 @@ html {
   overflow-y: scroll;
 }
 
-#app {
+.header {
   margin-top: 113px;
-
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: black;
-
-  font-family: serenity, sans-serif;
-  font-style: normal;
 }
 .content {
   max-width: 1200px;
