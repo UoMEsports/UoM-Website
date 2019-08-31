@@ -18,16 +18,21 @@ export default {
 <style lang="scss" scoped>
 .header {
   position: relative;
-  height: 766px;
+  height: 650px;
   width: 100%;
   overflow: hidden;
   color: white;
+
+  * {
+    user-select: none;
+  }
 }
 .banner {
   position: absolute;
   left: 0;
   top: 0;
   z-index: -50;
+  height: 100%;
 }
 
 .logo {
@@ -35,7 +40,7 @@ export default {
   width: 500px;
 
   right: 5%;
-  top: 10%;
+  top: 5%;
 }
 
 .text {
@@ -54,14 +59,19 @@ export default {
   h1 {
     font-size: 68px;
     margin-top: -15px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 
-@media only screen and (max-width: 1919px) {
+@media only screen and (max-width: 1720px) {
   .banner {
     left: auto;
-    right: -1680px;
+    right: -1334px;
+  }
+}
+@media only screen and (min-width: 1721px) {
+  .header {
+    height: calc(650px + 15vw - (0.15 * 1720px));
   }
 }
 </style>
