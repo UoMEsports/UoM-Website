@@ -23,29 +23,6 @@ export default {
     Heading
   },
   data: () => {
-    return {
-      discord: null
-    };
-  },
-  created () {
-    this.discord = new Crate({
-      server: '230727209202089984',
-      channel: '479574193273438208',
-      shard: 'https://admin.uomesports.co.uk',
-      color: '#6A2C91',
-      notifications: true,
-      indicator: true,
-      defer: false
-    });
-  },
-  mounted () {
-    window.setTimeout(() => {
-      this.discord.notify({
-        content: 'Need help? Join our discord!',
-        timeout: 10000,
-        avatar: require('@/assets/logo.png')
-      });
-    }, 4000);
   }
 };
 </script>
