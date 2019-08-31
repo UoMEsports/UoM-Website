@@ -8,6 +8,7 @@
         <router-view/>
       </transition>
     </div>
+    <DiscordPopup/>
   </div>
 </template>
 
@@ -15,14 +16,14 @@
 import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 import Heading from '@/components/Heading';
+import DiscordPopup from '@/components/DiscordPopup';
 
 export default {
   components: {
     Navbar,
     Header,
-    Heading
-  },
-  data: () => {
+    Heading,
+    DiscordPopup
   }
 };
 </script>
