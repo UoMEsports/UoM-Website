@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <Navbar/>
-    <Header class="header"/>
-    <div class="content">
+    <Header/>
+    <div class="content-container">
       <Heading>{{this.$route.name}}</Heading>
-      <transition name="fade">
-        <router-view/>
-      </transition>
+      <router-view/>
     </div>
   </div>
 </template>
@@ -56,19 +54,20 @@ html {
   overflow-y: scroll;
 }
 
-.header {
-  margin-top: 113px;
-}
-.content {
+.content-container {
   max-width: 1200px;
   width: 80%;
   margin: auto;
   position: relative;
+
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 72px;
+  }
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 </style>

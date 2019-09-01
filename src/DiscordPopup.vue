@@ -104,10 +104,10 @@ export default {
   animation: 0.3s ease 0s 1 normal none running button-trans;
   background-color: transparent;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1000px) {
     border-bottom-right-radius: 50%;
     right: 2px;
-    bottom: 2px;
+    bottom: 72px;
   }
 
   &.show {
@@ -192,6 +192,11 @@ export default {
     width: 100%;
     height: 100%;
     inset: 0px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    bottom: 72px;
+    right: 2px;
   }
 
   bottom: 20px;
@@ -288,6 +293,7 @@ export default {
     }
   }
 }
+
 .notifications {
   display: flex;
   pointer-events: none;
@@ -299,6 +305,10 @@ export default {
   max-height: calc(70% - 100px);
   right: 20px;
   bottom: 76px;
+
+  @media only screen and (max-width: 1000px) {
+    bottom: 120px;
+  }
 
   .notification-trans-enter-active, .notification-trans-leave-active {
     transition: all 0.5s cubic-bezier(0, 0.8, 0.25, 1.18) 0s;
@@ -315,7 +325,6 @@ export default {
     flex-shrink: 0;
 
     .avatar {
-      height: 35px;
       width: 35px;
       float: right;
       border-radius: 100%;

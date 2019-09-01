@@ -28,10 +28,15 @@ export default {
   font-size: 50px;
   text-align: left;
   margin-bottom: 0;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 30px;
+  }
 }
 
 .underline {
   border-top: 3px solid $dark;
   width: calc(100% + 80px);
 }
+
 </style>
