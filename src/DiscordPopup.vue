@@ -100,7 +100,8 @@ export default {
   border-radius: 56px;
   border: medium none;
   padding: 0px;
-  transition: box-shadow 0.2s ease 0s, background-color 0.3s ease 0s, opacity 0.2s ease 0s, transform 0.2s ease 0s;
+  transition: box-shadow 0.5s ease 0s, background-color 0.5s ease 0s, opacity 0.5s ease 0s, transform 0.5s ease 0s;
+  transition-delay: 0.2s;
   animation: 0.3s ease 0s 1 normal none running button-trans;
   background-color: transparent;
 
@@ -113,6 +114,7 @@ export default {
   &.show {
     box-shadow: rgba(106, 44, 145, 0.3) 0px 3px 5px -1px, rgba(106, 44, 145, 0.14) 0px 6px 10px 0px, rgba(106, 44, 145, 0.12) 0px 1px 18px 0px;
     background-color: $dark;
+    transition-delay: 0s;
   }
 
   .icons {
@@ -126,7 +128,6 @@ export default {
       left: 0px;
       width: 100%;
       height: 100%;
-      transition: transform 0.16s linear 0s, opacity 0.2s ease 0s;
     }
 
     .close {
@@ -134,9 +135,13 @@ export default {
       opacity: 0.6;
       border-radius: inherit;
 
+      transition: transform 0.16s linear 0s, opacity 0.2s ease 0s;
+
       &.hidden {
         opacity: 0 !important;
         transform: rotate(30deg) scale(0);
+
+        transition: transform 0.16s linear 0.2s, opacity 0.2s ease 0.2s;
       }
     }
 
@@ -144,9 +149,13 @@ export default {
       padding: 12px;
       border-radius: inherit;
 
+      transition: transform 0.16s linear 0.2s, opacity 0.2s ease 0.2s;
+
       &.hidden {
         opacity: 0;
         transform: rotate(30deg) scale(0);
+
+        transition: transform 0.16s linear 0s, opacity 0.2s ease 0s;
       }
     }
   }
@@ -206,13 +215,17 @@ export default {
   height: calc(100% - 40px);
   transform-origin: 100% 100% 0px;
 
+  transition-delay: 0s;
+
   &.hidden {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.1);
+    transition-delay: 0.3s;
 
-    > div {
+    .popup-inner {
       border-radius: 200px !important;
+      transition-delay: 0.3s;
     }
   }
 
@@ -221,12 +234,12 @@ export default {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 40px;
     transition: border-radius 0.2s ease 0s;
-    border-radius: 17px !important;
+    border-radius: 28px !important;
+    transition-delay: 0s;
 
     display: inline-block;
     overflow: hidden;
     background-color: rgb(54, 57, 62);
-    border-radius: 7px;
     vertical-align: top;
 
     padding: 20px;
