@@ -1,6 +1,10 @@
 <template>
   <div class="committee">
-    <CommitteeMember v-for="(member, index) in committee" :key="member.img" :index="index" :member="member"/>
+    <CommitteeMember
+      v-for="(member, index) in committee"
+      :key="member.img"
+      :index="index"
+      :member="member"/>
   </div>
 </template>
 
