@@ -25,7 +25,7 @@ export default {
         },
         {
           'name': 'Dan Shields',
-          'title': 'Secretary, Live Events Officer and Tech Officer',
+          'title': 'Secretary, Live Events Officer, Tech Officer',
           'img': 'dan'
         },
         {
@@ -40,7 +40,7 @@ export default {
         },
         {
           'name': 'Josh "Fill" Fillingham',
-          'title': 'Social Secretary and Broadcast Officer',
+          'title': 'Broadcast Officer, Social Secretary',
           'img': 'fill'
         },
         {
