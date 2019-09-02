@@ -17,6 +17,10 @@ export default {
   width: 100%;
   text-align: left;
   padding-bottom: 35px;
+
+  @media only screen and (min-width: 1001px) {
+    display: none;
+  }
 }
 
 .heading {
@@ -28,10 +32,6 @@ export default {
   font-size: 50px;
   text-align: left;
   margin-bottom: 0;
-
-  @media only screen and (max-width: 1000px) {
-    font-size: 30px;
-  }
 }
 
 .underline {

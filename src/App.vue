@@ -63,6 +63,10 @@ html {
   @media only screen and (max-width: 1000px) {
     margin-bottom: 72px;
   }
+
+  @media only screen and (min-width: 1001px) {
+    margin-top: 45px;
+  }
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
