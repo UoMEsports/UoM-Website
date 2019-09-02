@@ -1,9 +1,12 @@
 <template>
-  <div class="committee-member" :class="{right: index % 2}">
-    <img :src="require('../assets/committee/' + member.img + '.jpg')" class="image" :class="{right: index % 2}">
-    <div class="text" :class="{right: index % 2}">
-      <h1 class="name">{{member.name}}</h1>
-      <h2 class="title">{{member.title}}</h2>
+  <div class="committee-member-container">
+    <hr class="line" v-show="index !== 0">
+    <div class="committee-member" :class="{right: index % 2}">
+      <img :src="require('../assets/committee/' + member.img + '.jpg')" class="image" :class="{right: index % 2}">
+      <div class="text" :class="{right: index % 2}">
+        <h1 class="name">{{member.name}}</h1>
+        <h2 class="title">{{member.title}}</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -29,23 +32,44 @@ export default {
   position: relative;
   align-items: center;
 
+  @media only screen and (max-width: 650px) {
+    display: block;
+    height: auto;
+
+    .image {
+      margin-bottom: -25px;
+    }
+
+    .text {
+      text-align: center !important;
+    }
+  }
+
   > * {
     position: relative;
   }
 
   &.right {
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   .image {
-    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
   }
   .text {
     margin: 0 25px;
+    text-align: left;
     &.right {
       order: -1;
+      text-align: right;
     }
   }
 }
-
+.line {
+  border: 0;
+  height: 1px;
+  //background: $dark;
+  background-image: linear-gradient(to right, rgba($light, 0.2), $dark, rgba($light, 0.2));
+}
 </style>
