@@ -35,8 +35,6 @@
 </template>
 
 <script>
-import { EventBus } from './event-bus.js';
-
 export default {
   data () {
     return {
@@ -48,10 +46,6 @@ export default {
     };
   },
   created () {
-    EventBus.$on('toggle-discord', () => {
-      this.toggle();
-    });
-
     // If this is user's first visit (or we're in development) show a help notification
     if (process.env.NODE_ENV === 'development' || !this.$cookies.isKey('not-first-visit')) {
       this.$cookies.set('not-first-visit', true);
@@ -63,7 +57,7 @@ export default {
       }, 5000);
       window.setTimeout(() => {
         this.notification = false;
-      }, 15000);
+      }, 10000);
     }
   },
   methods: {
