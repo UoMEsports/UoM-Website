@@ -6,6 +6,7 @@
       <div class="text" :class="{right: index % 2}">
         <h1 class="name">{{member.name}}</h1>
         <h2 class="title">{{member.title}}</h2>
+        <h2 v-if="member.twitter" class="twitter"><a target="_blank" :href="'https://twitter.com/' + member.twitter">@{{member.twitter}}</a></h2>
       </div>
     </div>
   </div>
@@ -63,6 +64,17 @@ export default {
     &.right {
       order: -1;
       text-align: right;
+    }
+
+    .twitter {
+      margin-top: 0;
+      a {
+        color: #1da1f2;
+      }
+    }
+
+    .title {
+      margin-bottom: 10px;
     }
   }
 }
