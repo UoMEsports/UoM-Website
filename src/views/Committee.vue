@@ -73,7 +73,7 @@ export default {
           'img': 'sum'
         },
         {
-          'name': 'Kaung San',
+          'name': 'Kaung "naS" San',
           'title': 'General Committee',
           'twitter': null,
           'img': 'nas'
