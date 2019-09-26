@@ -3,7 +3,7 @@
     <Navbar/>
     <Header/>
     <div class="content-container">
-      <Heading>{{this.$route.name}}</Heading>
+      <Heading class="page-heading">{{this.$route.name}}</Heading>
       <router-view/>
     </div>
   </div>
@@ -54,6 +54,11 @@ html {
   overflow-y: scroll;
 }
 
+.page-heading {
+  @media only screen and (min-width: 1001px) {
+    display: none;
+  }
+}
 .content-container {
   max-width: 1200px;
   width: 80%;
