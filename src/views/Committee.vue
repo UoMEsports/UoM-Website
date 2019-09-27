@@ -67,9 +67,9 @@ export default {
           'img': 'aiden'
         },
         {
-          'name': 'Sum "Sumage" Chan',
+          'name': 'Sum Yang Chan',
           'title': 'Rocket League Rep',
-          'twitter': null,
+          'twitter': 'SumageGames',
           'img': 'sum'
         },
         {
