@@ -15,6 +15,7 @@
       <div class="button"><a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a></div>
       <div class="button"><a target="_blank" href="https://twitter.com/uomesports"><img src="@/assets/twitter.png"></a></div>
     </div>
+    <h1 class="email"><a href="mailto:info@uomesports.co.uk">info@uomesports.co.uk</a></h1>
   </div>
 </template>
 
@@ -72,7 +73,6 @@ export default {
 
   .other {
     margin: auto;
-    margin-bottom: 50px;
     width: 300px;
     max-width: 100%;
 
@@ -86,6 +86,11 @@ export default {
         max-width: 100%;
       }
     }
+  }
+
+  .email {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 </style>
