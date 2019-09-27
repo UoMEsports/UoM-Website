@@ -2,6 +2,13 @@
   <div class="events">
     <Event>
       <template v-slot:image>
+        <a href="https://lan.uomesports.co.uk" target="_blank"><img src="@/assets/lan.jpg"></a>
+      </template>
+
+      This is our latest addition to our event roster, and the first LAN of the year is just round the corner. Expect a whole day of PC gaming fun, either with your own machine or a borrowed ROG Laptop. Click <a href="https://lan.uomesports.co.uk">here</a> to learn more.
+    </Event>
+    <Event>
+      <template v-slot:image>
         <a href="https://kotn.uomesports.co.uk" target="_blank"><img src="@/assets/kotn.jpg"></a>
       </template>
 
