@@ -7,13 +7,13 @@
       <h2>Make sure you're in here to keep up with our latest events and discussions!</h2>
     </div>
     <img class="contact-image facebook" src="@/assets/facebook-banner.svg" @click="openFacebook()">
-    <h3>We also have a facebook group where we post announcements and events.</h3>
+    <h2>We also have a facebook group where we post announcements and events.</h2>
 
     <h1 class="other-header uom-font">Other Contact Methods</h1>
     <div class="other">
-      <div class="button"><a target="_blank" href="https://instagram.com/uomesports"><img src="@/assets/instagram.png"></a></div>
-      <div class="button"><a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a></div>
       <div class="button"><a target="_blank" href="https://twitter.com/uomesports"><img src="@/assets/twitter.png"></a></div>
+      <div class="button"><a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a></div>
+      <div class="button"><a target="_blank" href="https://instagram.com/uomesports"><img src="@/assets/instagram.png"></a></div>
     </div>
     <h1 class="email"><a href="mailto:info@uomesports.co.uk">info@uomesports.co.uk</a></h1>
   </div>
