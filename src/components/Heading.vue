@@ -38,7 +38,7 @@ export default {
       text-align: left;
       margin-bottom: 0;
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 850px) {
         font-size: 35px;
       }
     }

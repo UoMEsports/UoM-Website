@@ -21,7 +21,7 @@ export default {
   z-index: -101;
   margin-top: 113px;
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 850px) {
     margin-top: 0;
   }
 
@@ -42,7 +42,7 @@ export default {
       width: 100%;
       min-height: 100%;
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 850px) {
         width: 120%;
         margin-left: -20%;
       }

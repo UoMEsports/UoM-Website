@@ -17,14 +17,14 @@
       <router-link class="nav-link" to="/events">Events</router-link>
       <router-link class="nav-link" to="/committee">Committee</router-link>
       <router-link class="nav-link" to="/contact">Contact</router-link>
-      <router-link class="nav-link" to="/about">About</router-link>
+      <!--<router-link class="nav-link" to="/about">About</router-link>-->
     </div>
     <div id="mobile-nav">
       <router-link class="nav-link" to="/"><font-awesome-icon class="fas" icon="home"/></router-link>
       <router-link class="nav-link" to="/events"><font-awesome-icon class="fas" icon="trophy"/></router-link>
       <router-link class="nav-link" to="/committee"><font-awesome-icon class="fas" icon="user-friends"/></router-link>
       <router-link class="nav-link" to="/contact"><font-awesome-icon class="fas" icon="envelope-open-text"/></router-link>
-      <router-link class="nav-link" to="/about"><font-awesome-icon class="fas" icon="question-circle"/></router-link>
+      <!--<router-link class="nav-link" to="/about"><font-awesome-icon class="fas" icon="question-circle"/></router-link>-->
     </div>
   </div>
 </template>
@@ -127,7 +127,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
   #nav {
     display: none;
   }
@@ -136,7 +136,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1250px) {
   .events, .socials {
     display: none;
   }
