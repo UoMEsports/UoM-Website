@@ -24,7 +24,7 @@
           <h1>Hearthstone</h1>
         </div>
         <div class="game">
-          <img src="@/assets/games/LoL.png">
+          <img src="@/assets/games/br.png">
           <h1>Battle Royales</h1>
         </div>
       </div>
