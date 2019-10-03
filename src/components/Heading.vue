@@ -18,6 +18,8 @@ export default {
 <style lang="scss" scoped>
 .heading-container {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   text-align: left;
   padding-bottom: 35px;
 
@@ -39,7 +41,7 @@ export default {
       margin-bottom: 0;
 
       @media only screen and (max-width: 850px) {
-        font-size: 35px;
+        font-size: 32px;
       }
     }
 
