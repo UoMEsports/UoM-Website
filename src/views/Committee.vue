@@ -44,7 +44,7 @@ export default {
         },
         {
           'name': 'Josh "Fill" Fillingham',
-          'title': 'Broadcast Officer, Social Secretary',
+          'title': 'Broadcast Officer',
           'twitter': 'Fill_30',
           'img': 'fill'
         },
