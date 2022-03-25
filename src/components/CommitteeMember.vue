@@ -2,8 +2,7 @@
   <div class="committee-member-container">
     <hr class="line" v-show="index !== 0">
     <div class="committee-member" :class="{right: index % 2}">
-      <!-- <img :src="require('../assets/committee/' + member.img + '.jpg')" class="image" :class="{right: index % 2}"> -->
-      <img src="../assets/committee/default.png" class="image">
+      <img :src="(member.img ? require('../assets/committee/' + member.img) : require('../assets/committee/default.png')) " class="image" :class="{right: index % 2}">
       <div class="text" :class="{right: index % 2}">
         <h1 class="name">{{member.name}}</h1>
         <h2 class="title">{{member.title}}</h2>
