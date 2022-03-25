@@ -2,7 +2,7 @@
   <div class="committee-member-container">
     <hr class="line" v-show="index !== 0">
     <div class="committee-member" :class="{right: index % 2}">
-      <img :src="member.img ? imgs[member.img] : imgs['default']" class="image" :class="{right: index % 2}">
+      <img :src="member.img ? imgs[member.img] : imgs['def']" class="image" :class="{right: index % 2}">
       <div class="text" :class="{right: index % 2}">
         <h1 class="name">{{member.name}}</h1>
         <h2 class="title">{{member.title}}</h2>

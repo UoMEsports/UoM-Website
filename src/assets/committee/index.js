@@ -1,3 +1,3 @@
-import fill from './fill.jpg'
+import def from './default.jpg'
 
-export default {fill}
+export default {def}
