@@ -14,6 +14,7 @@
       <div class="button"><a target="_blank" href="https://twitter.com/uomesports"><img src="@/assets/twitter.png"></a></div>
       <div class="button"><a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a></div>
       <div class="button"><a target="_blank" href="https://instagram.com/uomesports"><img src="@/assets/instagram.png"></a></div>
+      <div class="button"><a target="_blank" href="https://www.facebook.com/groups/uomesports"><img src="@/assets/facebook.png"></a></div>
     </div>
     <p></p>
     <h1 class="email"><a href="mailto:info@uomesports.co.uk">info@uomesports.co.uk</a></h1>
@@ -82,6 +83,7 @@ export default {
 
     .button {
       flex-basis: 25%;
+      margin: 10px;
 
       img {
         max-width: 100%;
