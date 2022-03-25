@@ -6,15 +6,17 @@
       <h2></h2>
       <h2>Make sure you're in here to keep up with our latest events and discussions!</h2>
     </div>
-    <img class="contact-image facebook" src="@/assets/facebook-banner.svg" @click="openFacebook()">
-    <h2>We also have a facebook group where we post announcements and events.</h2>
+    <!-- <img class="contact-image facebook" src="@/assets/facebook-banner.svg" @click="openFacebook()">
+    <h2>We also have a facebook group where we post announcements and events.</h2> -->
 
     <h1 class="other-header uom-font">Other Contact Methods</h1>
     <div class="other">
       <div class="button"><a target="_blank" href="https://twitter.com/uomesports"><img src="@/assets/twitter.png"></a></div>
       <div class="button"><a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a></div>
       <div class="button"><a target="_blank" href="https://instagram.com/uomesports"><img src="@/assets/instagram.png"></a></div>
+      <div class="button"><a target="_blank" href="https://www.facebook.com/groups/uomesports"><img src="@/assets/facebook.png"></a></div>
     </div>
+    <p></p>
     <h1 class="email"><a href="mailto:info@uomesports.co.uk">info@uomesports.co.uk</a></h1>
   </div>
 </template>
@@ -23,17 +25,17 @@
 export default {
   data () {
     return {
-      facebookGroup: process.env.VUE_APP_FACEBOOK_GROUP,
+      // facebookGroup: process.env.VUE_APP_FACEBOOK_GROUP,
       discordInvite: process.env.VUE_APP_DISCORD_INVITE
     };
   },
   methods: {
     openDiscord () {
       window.open(this.discordInvite, '_blank');
-    },
-    openFacebook () {
-      window.open(this.facebookGroup, '_blank');
     }
+    // openFacebook () {
+    //   window.open(this.facebookGroup, '_blank');
+    // }
   }
 };
 </script>
@@ -81,6 +83,7 @@ export default {
 
     .button {
       flex-basis: 25%;
+      margin: 10px;
 
       img {
         max-width: 100%;

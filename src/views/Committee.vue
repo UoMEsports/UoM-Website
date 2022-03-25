@@ -19,64 +19,49 @@ export default {
     return {
       committee: [
         {
-          'name': 'Jon Chia',
-          'title': 'President',
-          'twitter': '_Jon_Chia_',
-          'img': 'jon'
+          'name': 'Meg "wings" Sunshine',
+          'title': 'President, Inclusions Officer',
+          'twitter': null
         },
         {
-          'name': 'Dan Shields',
-          'title': 'Secretary, Live Events Officer, Tech Officer',
-          'twitter': 'DanShieldsUK',
-          'img': 'dan'
+          'name': 'Yaser "tko survivor"',
+          'title': 'Secretary, Social Secretary, League of Legends Rep',
+          'twitter': null
         },
         {
-          'name': 'John Banks',
-          'title': 'Treasurer, Rainbow 6 Siege Rep',
-          'twitter': 'ThunderhawkU',
-          'img': 'john'
+          'name': 'Zoe "pandakat" Guo',
+          'title': 'Treasurer',
+          'twitter': null
         },
         {
-          'name': 'Barbora "Barb" Salcman',
-          'title': 'Game Rep Lead',
-          'twitter': null,
-          'img': 'barb'
+          'name': 'Dimitris "CookiezFort" Tsioumanis',
+          'title': 'Lead Game Rep',
+          'twitter': null
         },
         {
-          'name': 'Josh "Fill" Fillingham',
+          'name': 'abluey',
           'title': 'Broadcast Officer',
-          'twitter': 'Fill_30',
-          'img': 'fill'
+          'twitter': null
         },
         {
-          'name': 'Devon Salopek',
-          'title': 'CS:GO Rep',
-          'twitter': null,
-          'img': 'devon'
-        },
-        {
-          'name': 'Jingyang "Carl" Zhong',
+          'name': 'TJ "tjw"',
           'title': 'Overwatch Rep',
-          'twitter': null,
-          'img': 'carl'
+          'twitter': null
         },
         {
-          'name': 'Aiden Jenkins',
-          'title': 'Battle Royale Rep',
-          'twitter': null,
-          'img': 'aiden'
+          'name': 'Danny "Paani" Islam',
+          'title': 'VALORANT Rep',
+          'twitter': null
         },
         {
-          'name': 'Sum Yang Chan',
+          'name': 'Gareth "GM667" Meyes',
           'title': 'Rocket League Rep',
-          'twitter': 'SumageGames',
-          'img': 'sum'
+          'twitter': null
         },
         {
-          'name': 'Kaung "naS" San',
-          'title': 'General Committee',
-          'twitter': null,
-          'img': 'nas'
+          'name': 'Max "Trydodis"',
+          'title': 'Battle Royale Rep',
+          'twitter': null
         }
       ]
     };
