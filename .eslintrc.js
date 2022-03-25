@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
+  extends: [
     'plugin:vue/essential',
     '@vue/standard'
   ],
@@ -28,7 +28,7 @@ module.exports = {
     'indent': ['error', 2],
     'no-use-before-define': ['error', { 'functions': false }]
   },
-  'globals': {
+  globals: {
     'Crate': 'readonly'
   }
 };
