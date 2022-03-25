@@ -29,5 +29,8 @@ module.exports = {
   },
   globals: {
     'Crate': 'readonly'
-  }
+  },
+  ignorePatterns: [
+    'dist/'
+  ]
 };
