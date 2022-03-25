@@ -11,11 +11,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  build: {
-    rollupOptions: {
-      input: ['./src/main.js']
-    }
-  },
   css: {
     preprocessorOptions: {
       scss: {
