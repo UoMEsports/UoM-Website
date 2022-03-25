@@ -43,7 +43,7 @@ html {
 
   &::-webkit-scrollbar-thumb
   {
-    border-radius: $scrollbar-width / 2;
+    border-radius: calc($scrollbar-width / 2);
     background-image: -webkit-gradient(linear,
                                        left bottom,
                                        left top,
