@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CommitteeMember from '@/components/CommitteeMember';
+import CommitteeMember from '@/components/CommitteeMember.vue';
 
 export default {
   components: {

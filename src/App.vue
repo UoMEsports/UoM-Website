@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar';
-import Header from '@/components/Header';
-import Heading from '@/components/Heading';
+import Navbar from '@/components/Navbar.vue';
+import Header from '@/components/Header.vue';
+import Heading from '@/components/Heading.vue';
 
 export default {
   components: {

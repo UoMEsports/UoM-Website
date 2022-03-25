@@ -25,8 +25,8 @@
 export default {
   data () {
     return {
-      // facebookGroup: process.env.VUE_APP_FACEBOOK_GROUP,
-      discordInvite: process.env.VUE_APP_DISCORD_INVITE
+      //facebookGroup: import.meta.env.VITE_FACEBOOK_GROUP,
+      discordInvite: import.meta.env.VITE_DISCORD_INVITE
     };
   },
   methods: {

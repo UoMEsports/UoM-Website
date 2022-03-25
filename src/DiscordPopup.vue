@@ -40,14 +40,14 @@ export default {
     return {
       open: false,
       hasOpened: false,
-      invite: process.env.VUE_APP_DISCORD_INVITE,
+      invite: import.meta.env.VITE_DISCORD_INVITE,
       notification: false,
       numberPopup: false
     };
   },
   created () {
     // If this is user's first visit (or we're in development) show a help notification
-    if (process.env.NODE_ENV === 'development' || !this.$cookies.isKey('not-first-visit')) {
+    if (import.meta.env.NODE_ENV === 'development' || !this.$cookies.isKey('not-first-visit')) {
       this.$cookies.set('not-first-visit', true);
       window.setTimeout(() => {
         if (!this.hasOpened) {
