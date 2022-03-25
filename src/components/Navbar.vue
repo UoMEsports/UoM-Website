@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <div class="events">
-      <a target="_blank" href="https://lan.uomesports.co.uk"><img src="@/assets/lan-logo.png"></a>
+      <!-- <a target="_blank" href="https://lan.uomesports.co.uk"><img src="@/assets/lan-logo.png"></a>
       <a target="_blank" href="https://kotn.uomesports.co.uk"><img src="@/assets/kotn-logo.png"></a>
-      <a target="_blank" href="https://hiveaid.uomesports.co.uk"><img src="@/assets/hiveaid-logo.png"></a>
+      <a target="_blank" href="https://hiveaid.uomesports.co.uk"><img src="@/assets/hiveaid-logo.png"></a> -->
     </div>
     <div class="socials">
       <a target="_blank" href="https://discord.gg/uomesports"><img src="@/assets/discord-logo.svg"></a>
-      <a target="_blank" href="https://www.facebook.com/groups/uomesports"><img src="@/assets/facebook.png"></a>
       <a target="_blank" href="https://twitch.tv/uomesports"><img src="@/assets/twitch.png"></a>
       <a target="_blank" href="https://twitter.com/uomesports"><img src="@/assets/twitter-small.png"></a>
       <a target="_blank" href="https://instagram.com/uomesports"><img src="@/assets/instagram.png"></a>
+      <!-- <a target="_blank" href="https://www.facebook.com/groups/uomesports"><img src="@/assets/facebook.png"></a> -->
     </div>
     <div id="nav" ref="nav" class="uom-font">
       <router-link class="nav-link" to="/">Home</router-link>
@@ -43,6 +43,7 @@ export default {
   left: 0;
 
   margin: 40px 0;
+  margin-left: 20px;
 
   z-index: 500;
 
@@ -61,6 +62,7 @@ export default {
   right: 0;
 
   margin: 40px 0;
+  margin-right: 20px;
 
   z-index: 500;
 

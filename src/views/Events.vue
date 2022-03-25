@@ -1,6 +1,10 @@
 <template>
   <div class="events">
     <Event>
+      No upcoming events yet; check back later or join our <a target="_blank" href="https://discord.gg/uomesports">Discord</a> to follow out latest announcements!
+    </Event>
+
+    <!-- <Event>
       <template v-slot:image>
         <a href="https://lan.uomesports.co.uk" target="_blank"><img src="@/assets/lan.jpg"></a>
       </template>
@@ -20,7 +24,7 @@
       </template>
 
       HiveAid was only added to our event calendar last year, but has already been a big success. The 2 day charity livestream was in aid of SpecialEffect and we beat our £500 target. The main attraction of the event is the all-star lineups from teams across the UK University esports scene.
-    </Event>
+    </Event> -->
   </div>
 </template>
 
