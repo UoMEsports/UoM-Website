@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CommitteeMember from '@/components/CommitteeMember';
+import CommitteeMember from '@/components/CommitteeMember.vue';
 
 export default {
   components: {
@@ -39,7 +39,7 @@ export default {
           'twitter': null
         },
         {
-          'name': 'abluey',
+          'name': '"abluey"',
           'title': 'Broadcast Officer',
           'twitter': null
         },
@@ -59,7 +59,7 @@ export default {
           'twitter': null
         },
         {
-          'name': 'Max "Trydodis"',
+          'name': 'Max "Trydodis" Lambert',
           'title': 'Battle Royale Rep',
           'twitter': null
         }

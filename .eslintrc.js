@@ -1,18 +1,17 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    es2021: true,
   },
   extends: [
-    'plugin:vue/essential',
-    '@vue/standard'
+    'plugin:vue/essential'
   ],
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/v-bind-style': 'warning',
-    'vue/v-on-style': 'warning',
-    'vue/no-v-html': 'warning',
+    'vue/v-bind-style': 'warn',
+    'vue/v-on-style': 'warn',
+    'vue/no-v-html': 'warn',
     'vue/html-self-closing': ['error', {
       'html': {
         'component': 'always',
@@ -24,11 +23,14 @@ module.exports = {
     'vue/max-attributes-per-line': ['warn', {
       'singleline': 3
     }],
-    'semi': ['error', 'always'],
     'indent': ['error', 2],
-    'no-use-before-define': ['error', { 'functions': false }]
+    'no-use-before-define': ['error', { 'functions': false }],
+    'vue/multi-word-component-names': 0
   },
   globals: {
     'Crate': 'readonly'
-  }
+  },
+  ignorePatterns: [
+    'dist/'
+  ]
 };
