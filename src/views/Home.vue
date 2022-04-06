@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="description">
-      <p>UoM Esports Society aims to promote grassroot esports in the university scene. We do this by entering our members into national student-only leagues such as <a target="_blank" href="https://thenuel.com/">NUEL</a> and <a target="_blank" href="https://www.nse.gg/">NSE</a>. We also host socials such as casual meetups or viewing parties.</p>
+      <p>UoM Esports Society aims to promote grassroot esports in the university scene. We enter our members into national student-only leagues such as <a target="_blank" href="https://thenuel.com/">NUEL</a> and <a target="_blank" href="https://www.nse.gg/">NSE</a>. We also host socials such as casual meetups or viewing parties.</p>
       <p>We run tryouts for as many teams as we can create, so it doesn't matter if you're a high skilled competitive player or a more relaxed casual player-- there will be a team for you.</p>
       <p>Anyone can join our <a target="_blank" href="https://discord.gg/uomesports">Discord</a>, but be sure to visit the University of Manchester <a target="_blank" href="https://manchesterstudentsunion.com/activities/view/esport">Student Union website</a> to sign up as an official member of the society for additional perks!</p>
     </div>
@@ -64,7 +64,7 @@ export default {
   width: 1000px;
   max-width: 100%;
   margin: auto;
-  font-size: 20px;
+  font-size: 24px;
 
   .heading {
     margin-bottom: -20px;
