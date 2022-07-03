@@ -19,37 +19,47 @@ export default {
     return {
       committee: [
         {
-          'name': 'Meg "wings" Sunshine',
-          'title': 'President, Inclusions Officer',
+          'name': 'Zoe "abluey"',
+          'title': 'President',
+          'twitter': null
+        },
+        {
+          'name': 'Dennis "denoose"',
+          'title': 'Secretary',
           'twitter': null
         },
         {
           'name': 'Yaser "tko survivor"',
-          'title': 'Secretary, Social Secretary, League of Legends Rep',
-          'twitter': null
-        },
-        {
-          'name': 'Zoe "pandakat" Guo',
           'title': 'Treasurer',
           'twitter': null
         },
         {
-          'name': 'Dimitris "CookiezFort" Tsioumanis',
-          'title': 'Lead Game Rep',
+          'name': 'Bobby "Wheely" Kent',
+          'title': 'Inclusions Officer, Lead Game Rep, Nintendo Rep',
           'twitter': null
         },
         {
-          'name': '"abluey"',
-          'title': 'Broadcast Officer',
+          'name': 'Eden "shpleden"',
+          'title': 'Socials Secretary',
           'twitter': null
         },
         {
-          'name': 'TJ "tjw"',
+          'name': 'Nabiel "Indigo Violet"',
+          'title': 'Broadcast Officer, Teamfight Tactics Rep',
+          'twitter': null
+        },
+        {
+          'name': '"AngusM"',
+          'title': 'CSGO Rep',
+          'twitter': null
+        },
+        {
+          'name': 'Luke "Luke" Barlow',
           'title': 'Overwatch Rep',
           'twitter': null
         },
         {
-          'name': 'Danny "Paani" Islam',
+          'name': 'Seobin "Narko"',
           'title': 'VALORANT Rep',
           'twitter': null
         },
@@ -59,8 +69,13 @@ export default {
           'twitter': null
         },
         {
-          'name': 'Max "Trydodis" Lambert',
-          'title': 'Battle Royale Rep',
+          'name': '"Gamago"',
+          'title': 'Rainbow 6 Siege Rep, Battle Royale Rep',
+          'twitter': null
+        },
+        {
+          'name': 'Hasan "Quagmire" Adil',
+          'title': 'Genshin Impact Rep',
           'twitter': null
         }
       ]
