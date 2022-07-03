@@ -11,6 +11,7 @@ npm run dev
 ```
 
 ### Compiles and minifies for production
+### After each production change, build and push to gh-pages branch
 ```
 npm run build
 ```
